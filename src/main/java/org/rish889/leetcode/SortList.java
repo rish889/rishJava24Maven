@@ -8,7 +8,7 @@ public class SortList {
         ListNode a2 = new ListNode(2, a1);
         ListNode a4 = new ListNode(4, a2);
 
-        ListNode result = new Solution().sortList(a4);
+        ListNode result = new Solution2().sortList(a4);
         while (result != null) {
             System.out.print(result.val);
             result = result.next;
@@ -18,7 +18,7 @@ public class SortList {
     }
 }
 
-class Solution {
+class Solution2 {
     public ListNode sortList(ListNode head) {
         return mergeSort(head);
     }
@@ -55,6 +55,7 @@ class Solution {
     }
 
     private ListNode merge(ListNode firstSortedHalf, ListNode secondSortedHalf) {
+        return null;
     }
 }
 
